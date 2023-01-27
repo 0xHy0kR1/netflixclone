@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside section section'
+    'section section aside aside'
+    'aside aside section section'
+    'section section aside aside'
+    'section section section section'
+    'footer footer footer footer';
+}
+
+#navbar{
+    grid-area: navbar;
+}
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+}

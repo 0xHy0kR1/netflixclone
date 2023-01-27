@@ -13,9 +13,15 @@ app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
 
 // ENDPOINTS
-app.get("/index", (req, res) => {
-    res.status(200).render('index', {title: 'netflix', message: 'Hello there!'})
-});
+// app.get("/index", (req, res) => {
+//     res.status(200).render('index', {title: 'netflix', message: 'Hello there!'})
+// });
+
+app.get('/', (req, res) =>{
+    const con = "This is a content"
+    const params = {'title': 'Netflix is a title', "content": con}
+    res.status(200).render('index.pug', params);
+})
 
 app.listen(port, (req, res) => {
     console.log(`The application started sucessfully on port ${port}`);
