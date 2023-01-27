@@ -7,16 +7,31 @@
     grid-template-areas: 
     'navbar navbar navbar navbar'
     'section section section section'
-    'aside aside section section'
-    'section section aside aside'
-    'aside aside section section'
-    'section section aside aside'
-    'section section section section'
-    'footer footer footer footer';
+    ;
 }
 
+/* Navbar section */
 #navbar{
     grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+nav > img{
+    width: 217px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    height: 80px;
+}
+.topRightButton{
+    display: flex;
+    margin-right: 56px;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+.lang-select{
+    margin-right: 12px;
 }
 #section{
     grid-area: section;
