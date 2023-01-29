@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#{title}</title>
     style
-      include ../static/style.css
+      include ../static/css/style.css
 </head>
 <body>
     <div class="container">
@@ -14,10 +14,10 @@
             <img src="../static/img/Netflix-Logo.wine.svg" alt="netflix">
             <div class="topRightButton">
                 <div class="select-lang">
-                    <select name="lang-select">
-                        <option value="Hindi">हिंदी</option>
-                        <option value="English">English</option>
-                    </select>
+                    <div class="lang-select" name="lang-select">
+                        <p>English</p>
+                        <img src="../static/img/down-arrow.svg" alt="">
+                    </div>
                 </div>
                 <div class="indexSignIn">
                     <a href="" id="indexSignIn" class="redButton authlinks">Sign In</a> 
@@ -27,6 +27,7 @@
         <section id="section">
 
         </section>
+        script(src='../static/js/indexJS/nav.js')
     </div>
 </body>
 </html>
