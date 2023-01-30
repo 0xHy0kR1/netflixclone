@@ -34,9 +34,11 @@ nav > img{
 }
 .select-lang{
     margin-right: 27px;
+    margin-top: 7px;
 }
 .lang-select{
     border: 2px solid grey;
+    width: 93px;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Inconsolata', monospace;
@@ -45,19 +47,45 @@ nav > img{
     margin-bottom: 9px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    box-sizing: border-box ;
 }
-.lang-select img{
-    width: 14px;
-    /* filter: invert(100%); */
+.lang-select p{
+    margin-left: 16px;
+}
+.lang-select img:nth-child(1), .options img:nth-child(1){
+    width: 12px;
+    position: absolute;
+    right: 240px;
+}
+.lang-select img:nth-child(3), .options img:nth-child(3){
+    width: 12px;
+    position: absolute;
+    right: 174px;
 }
 
-.lang-select::after{
-    content: "\e898";
-    font-family: nf-icon;
-    font-size: 6px;
-    pointer-events: none;
-    position: absolute;
+#lang-list{
+    margin-right: 1px;
+    margin-top: 7px;
+}
+.options{
+    border: 2px solid grey;
+    width: 93px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    line-height: 18px;
+    padding-right: 6px;
+    padding-left: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.options p{
+    margin-left: 18px;
 }
 #indexSignIn{
     text-decoration: none;
