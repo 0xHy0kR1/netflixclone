@@ -48,6 +48,7 @@ nav > img{
     align-items: center;
     box-sizing: border-box ;
     border-radius: 4px;
+    border: 2px solid red;
 }
 .lang-select p{
     margin-left: 16px;
