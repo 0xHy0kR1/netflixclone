@@ -15,7 +15,7 @@
             <div class="topRightButton">
                 <div class="select-lang">
                     <div class="lang-select" id="language-select" name="lang-select">
-                        <img src="../static/img/globe_index_page.svg" alt="">
+                        <img src="../static/img/globe_index_page.png" alt="">
                         <p id="current-lang">English</p>
                         <img src="../static/img/down-arrow.png" alt="arrow_down">
                     </div>
@@ -36,8 +36,29 @@
         <section class="section-1" id="section">
             <div class="overlay-netflix-image-background"></div>
             <img id="netflix_index_page_background" src="../static/img/netflix_index_page_background.jpg" alt="netflix_index_page_background">
-            <h1 class="section-1-heading">Unlimited movies, TV shows and more</h1>
-            <p class="section-1-text-1">Watch anywhere. Cancel anytime.</p>
+            <div class="email-account-creation">
+                <h1 class="section-1-heading">Unlimited movies, TV shows and more</h1>
+                <p class="section-1-text-1">Watch anywhere. Cancel anytime.</p>
+                <div class="email-fill-block">
+                    <form action="/" method="post" id="index-page-email">
+                        <h3 class="email-write-desc">Ready to watch? Enter your email to create or restart your membership.</h3>
+                        <div class="email-write-button-and-input">
+                            <div class="border-of-input">
+                                <label for="email-of-customer" class="label-email-name">Email address</label>
+                                <div class="input-email-block">
+                                    <input type="email" name="email" id="email-of-user">
+                                </div>
+                            </div>
+                            <button type="submit" class="email-button">Get Started</button>
+                            <div class="right-arrow-block">
+                                <span class="arrow-span-block">
+                                    <img src="../static/img/right-arrow-index-page.svg" alt="right_arrow" >
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
         script(src='../static/js/indexJS/nav.js')
     </div>
