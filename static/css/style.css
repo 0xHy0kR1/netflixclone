@@ -3,11 +3,13 @@
 /* below for h1 section-1 tag */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather+Sans:wght@800&display=swap');
 /* Below for p section-1 tag */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto&family=Source+Sans+Pro&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI Variable';
+    overflow-x: clip;
+    overflow-y: visible;
 }
 .container{
     display: grid;
@@ -72,7 +74,7 @@ nav > img{
 }
 /* globe CSS below */
 .lang-select img:nth-child(1), .options img:nth-child(1){
-    width: 20px;
+    width: 16px;
     position: relative;
     filter: invert(1);
     margin-right: 4px;
@@ -147,7 +149,7 @@ nav > img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .overlay-netflix-image-background{
     background: rgb(0 0 0 / 40%);
@@ -159,7 +161,7 @@ nav > img{
     width: 105%;
     z-index: -1;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 #netflix_index_page_background{
     position: absolute;
@@ -169,16 +171,66 @@ nav > img{
     top: -252px;
     object-fit: cover;
 }
+/* Section-1 text blok with email account creation block */
+.email-account-creation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 75px;
+}
 .section-1-heading{
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 24px;
 }
 .section-1-text-1{
     color: white;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Almarai', sans-serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+/* form css below */
+
+/* Aligning enter your email text and form css */
+/* CSS for form tag */
+#index-page-email{
+    display: flex;
+    flex-direction: column;
+}
+/* email write information */
+.email-write-desc{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* CSS for first div after form */
+.email-write-button-and-input{
+    display: flex;
+}
+
+/* CSS for input and label block */
+.block-of-input{
+
+}
+/* CSS for label  */
+.label-email-name{
+
+}
+/* CSS for email input  */
+.input-email-block input{
+
+}
+/* CSS for Get Started  */
+.email-button{
+
+}
+.right-arrow-block img{
+
 }
 #aside{
     grid-area: aside;
