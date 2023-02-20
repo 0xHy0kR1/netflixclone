@@ -9,7 +9,6 @@
     padding: 0;
     font-family: 'Segoe UI Variable';
     overflow-x: clip;
-    overflow-y: visible;
 }
 .container{
     display: grid;
@@ -213,21 +212,49 @@ nav > img{
     display: flex;
 }
 
-/* CSS for input and label block */
-.block-of-input{
-
-}
 /* CSS for label  */
 .label-email-name{
-
+    position: absolute;
+    font-size: 16px;
+    color: #9f9e9e;
+    transition: all 0.5 ease-in-out;
+    pointer-events: none;
+    bottom: 237px;
+    left: 467px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/* CSS for div which is outside of email */
+.input-email-block{
+    /* border-color: rgba(128, 128, 128, 0.7); */
+    background: rgba(22, 22, 22, 0.7);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 2px solid grey;
+}
+
 /* CSS for email input  */
 .input-email-block input{
-
+    background-color: transparent;
+    padding: 18px 0 11px 0;
+    color: white;
+    width: 373px;
+    height: 54px;
+    box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
+
 /* CSS for Get Started  */
 .email-button{
-
+    background: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px 34px;
+    box-sizing: border-box;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .right-arrow-block img{
 
