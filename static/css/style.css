@@ -210,38 +210,52 @@ nav > img{
 /* CSS for first div after form */
 .email-write-button-and-input{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
 }
 
 /* CSS for label  */
 .label-email-name{
-    position: absolute;
+    position: relative;
     font-size: 16px;
     color: #9f9e9e;
     transition: all 0.5 ease-in-out;
     pointer-events: none;
-    bottom: 237px;
-    left: 467px;
+    top: -35px;
+    left: 22px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.block-of-input{
+    height: 62px;
+    padding: 0px 1px 0px 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 /* CSS for div which is outside of email */
 .input-email-block{
-    /* border-color: rgba(128, 128, 128, 0.7); */
     background: rgba(22, 22, 22, 0.7);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    border-radius: 4px;
     border: 2px solid grey;
+    box-sizing: border-box;
+    margin-top: 1px;
 }
 
 /* CSS for email input  */
 .input-email-block input{
     background-color: transparent;
-    padding: 18px 0 11px 0;
+    padding: 11px 0 11px 11px;
     color: white;
     width: 373px;
     height: 54px;
     box-sizing: border-box;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    border: none;
+}
+.input-email-block input:focus{
+    outline: none;
 }
 
 /* CSS for Get Started  */
@@ -255,6 +269,9 @@ nav > img{
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 57px;
+    border-radius: 4px;
+    margin-top: 5px;
 }
 .right-arrow-block img{
 
