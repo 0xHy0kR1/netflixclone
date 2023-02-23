@@ -212,6 +212,8 @@ nav > img{
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* CSS for label  */
@@ -230,6 +232,8 @@ nav > img{
     padding: 0px 1px 0px 1px;
     box-sizing: border-box;
     border-radius: 4px;
+    margin-bottom: -4px;
+    margin-right: 7px;
 }
 /* CSS for div which is outside of email */
 .input-email-block{
@@ -271,10 +275,18 @@ nav > img{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 57px;
     border-radius: 4px;
-    margin-top: 5px;
 }
 .right-arrow-block img{
-
+    filter: invert(1);
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    right: 447px;
+    top: 500px;
+}
+.email-button:hover{
+    cursor: pointer;
+    background-color: #e50914;
 }
 #aside{
     grid-area: aside;
