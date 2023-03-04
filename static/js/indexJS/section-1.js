@@ -13,10 +13,24 @@ inputGreyBorder.addEventListener('blur', () =>{
 const emailInput = document.getElementById("email-of-user");
 const emailLabel = document.querySelector(".label-email-name");
 
+// Check for stored email on page load 
+window.addEventListener("load", () =>{
+    const storedEmail = localStorage.getItem('userEmail');
+    if(storedEmail){
+        emailInput.value = storedEmail;
+        emailLabel.classList.add('label-move');
+    }
+})
+// Store email in local storage when user enters it
+emailInput.addEventListener('input', () => {
+    localStorage.setItem('userEmail', emailInput.value);
+})
+// Move label up on input focus
 emailInput.addEventListener('focus', () => {
     emailLabel.classList.add('label-move');
 });
 
+// Move label down on input blur if no text entered
 emailInput.addEventListener('blur', () => {
     if(emailInput.value == ''){
         emailLabel.classList.remove('label-move');
