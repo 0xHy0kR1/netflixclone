@@ -49,7 +49,7 @@ form.addEventListener('submit', () =>{
     const emailRegex = `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`;
     if (emailRegex.test(email)) {
         // Redirect to second page
-        window.location.href = 'signup-step-1.html';
+        window.location.href = 'index.pug/signup.pug';
     }
     else{
         // Display the error message

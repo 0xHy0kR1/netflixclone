@@ -10,7 +10,12 @@ var langList = document.getElementById("lang-list");
 langSelect.onclick = function(){
     langList.classList.toggle("hide-lang-list");// It will help us when we click on same language select box then it will hide and also show the hindi and english langu.
 }
-
+// Hide the language list when the user clicks outside of it
+document.onclick = function(event) {
+    if (event.target != langSelect && event.target.parentNode != langSelect) {
+      langList.classList.add("hide-lang-list");
+    }
+}
 // from the below code we select the language between english and hindi
 for (const option of options) {
     option.onclick = function(){
