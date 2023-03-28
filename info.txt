@@ -1,0 +1,9 @@
+db.once('open', () => {
+  console.log('Connected to database');
+});
+info - 
+1. Here, we're using the once() method of the db object to add an event listener that listens for the open event. The open event is triggered when Mongoose successfully connects to the MongoDB database.
+
+2. The arrow function passed as the second argument to once() is the callback function that gets executed when the open event is triggered. In this case, we're simply logging a message to the console that says "Connected to database".
+
+mongoose.Schema() --> It is a constructor
