@@ -55,10 +55,9 @@ app.post('/', (req, res) => {
     const email = new Email({
         email: req.body.email,
     });
-    console.log(email.email);
     email.save()
         .then(() => {
-            res.status(200).render('signup.pug');
+            res.redirect('/signup/registration?locale=en-IN'); // In the web page client do a get request at "/signup" 
         })
         .catch((error) => {
             console.log(error);
@@ -71,6 +70,12 @@ app.post('/', (req, res) => {
         //     res.status(200).render('signup.pug ', {title: 'Success' });
         // }
     });
+
+    // The below is created only to serve the client "/signup" request
+    app.get('/signup/registration', function(req, res) {
+        res.render('signup', { locale: 'en-IN' });
+      });
+
 app.get('/', (req, res) =>{
     const con = "This is a content"
     const params = {'title': 'Netflix is a title', "content": con}
