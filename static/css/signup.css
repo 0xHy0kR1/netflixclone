@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI Variable';
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'footer footer footer footer'
+    ;
 }
 /* Netflix image section */
 #navbar{
     grid-area: navbar;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #logoSignUpStep1{
     width: 217px;
@@ -17,6 +27,26 @@
 }
 /* netflix SignIn link section */
 #SignIn{
-    color: grey;
+    color: black;
+    margin-right: 32px;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* CSS for Account Signup */
+
+/* CSS for section for setting up users account */
+#settingUp{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+#signupStep1{
+    width: 22px;
+    height: 22px;
 
 }
