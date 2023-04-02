@@ -1,3 +1,10 @@
+/* Below one is for section h1 purpose*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+/* Below one is for section span element purpose */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+/* Below one is for sectioni p element purpose  */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+/* Below one is for signIn purpose include span element*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 *{
     margin: 0;
@@ -44,9 +51,36 @@
     align-items: center;
     justify-content: center;
     border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+#settingUp span{
+    font-family: 'Archivo', sans-serif;
+    font-size: 11px;
+}
+#settingUp span b{
+    font-family: 'Archivo', sans-serif;
+}
+#settingUp h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+}
+#settingUp p{
+    font-family: 'Asap', sans-serif;
 }
 #signupStep1{
-    width: 22px;
-    height: 22px;
-
+    width: 230px;
+    height: 55px;
 }
+/* next button CSS below */
+.btn-next{
+    color: white;
+    background: #e50914;
+    padding: 18px 145px;
+    font-size: 23px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 22px;
+}
+
+
