@@ -68,18 +68,24 @@
 #settingUp p{
     font-family: 'Asap', sans-serif;
 }
-.signUpStep1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    width: 16%;
-    text-align: center;
+.midPageBodyContent{
+    margin-left: 22px;
+    border: 2px solid black;
 }
+
+/* CSS for the computer image */
 #signupStep1Img{
     width: 230px;
     height: 55px;
+}
+/* CSS for the h1 and span element below to the computer image */
+.bodyTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 42%;
+    margin: auto;
 }
 /* next button CSS below */
 .btn-next{
