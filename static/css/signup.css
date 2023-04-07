@@ -51,8 +51,6 @@
     align-items: center;
     justify-content: center;
     border: 2px solid red;
-    width: 100vw;
-    height: 100vh;
 }
 #settingUp span{
     font-family: 'Archivo', sans-serif;
@@ -64,22 +62,37 @@
 #settingUp h1{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
+    font-size: 35px;
 }
 #settingUp p{
     font-family: 'Asap', sans-serif;
 }
 .midPageBodyContent{
-    margin-left: 22px;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 113px;
 }
 
 /* CSS for the computer image */
 #signupStep1Img{
-    width: 230px;
-    height: 55px;
+    width: 275px;
+    height: 65px;
+    margin-bottom: 44px
 }
 /* CSS for the h1 and span element below to the computer image */
 .bodyTitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 59%;
+    margin: auto;
+    margin-bottom: 9px;
+}
+.contextBody{
     display: flex;
     flex-direction: column;
     text-align: center;
