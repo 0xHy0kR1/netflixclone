@@ -25,6 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f3f3f3;
 }
 #logoSignUpStep1{
     width: 217px;
@@ -50,25 +51,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    padding-bottom: 59px;
+    background-color: #f3f3f3;
+    border-top: 1px solid #80808029;
+    border-bottom: 1px solid #80808029;
 }
+/* CSS for steps in the account creation */
 #settingUp span{
     font-family: 'Archivo', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
 }
 #settingUp span b{
     font-family: 'Archivo', sans-serif;
 }
+/* CSS for title of the page  */
 #settingUp h1{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
     font-size: 35px;
 }
+/* CSS for context of the body  */
 #settingUp p{
     font-family: 'Asap', sans-serif;
 }
+/* CSS for the mid of page of body content */
 .midPageBodyContent{
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -92,6 +99,7 @@
     margin: auto;
     margin-bottom: 9px;
 }
+/* CSS for body description text */
 .contextBody{
     display: flex;
     flex-direction: column;
@@ -99,6 +107,10 @@
     align-items: center;
     width: 42%;
     margin: auto;
+}
+.contextBody p{
+    margin-bottom: 28px;
+    font-size: 18px;
 }
 /* next button CSS below */
 .btn-next{
@@ -110,4 +122,36 @@
     border: none;
 }
 
+/* CSS for the footer */
+.linksLang{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+}
 
+.site-footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.footer-top{
+    color: #737373;
+}
+.footer-top a{
+    text-decoration: none;
+    color: #737373;
+}
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-item-link{
+    list-style: none;
+    margin-right: 44px;
+}
+.footer-item-link a{
+    text-decoration: none;
+    color: #737373;
+}
