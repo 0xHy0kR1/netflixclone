@@ -134,10 +134,12 @@
     display: flex;
     flex-direction: column;
     margin-right: 12px;
-    margin-bottom: 12px;
+    margin-left: 80px;
 }
 .footer-top{
     color: #737373;
+    margin-bottom: 30px;
+    margin-top: 35px;
 }
 .footer-top a{
     text-decoration: none;
@@ -146,10 +148,13 @@
 .footer-links{
     display: flex;
     flex-wrap: wrap;
+    width: 1225px;
 }
 .footer-item-link{
     list-style: none;
-    margin-right: 44px;
+    width: 232px;
+    padding-right: 14px;
+    margin-bottom: 14px;
 }
 .footer-item-link a{
     text-decoration: none;
