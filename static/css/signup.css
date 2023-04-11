@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 /* Below one is for signIn purpose include span element*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+/* for custom select box stuffs */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -159,4 +162,75 @@
 .footer-item-link a{
     text-decoration: none;
     color: #737373;
+}
+/* CSS for making of custom CSS box */
+.lang-select{
+    width: 128px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 9px;
+    height: 30px;
+    justify-content: space-between;
+}
+.lang-select p{
+    font-size: 17px;
+    color: black;
+    margin-right: 4px;
+    font-family: 'DM Sans', sans-serif;
+}
+/* globe CSS below */
+.lang-select img:nth-child(1), .options img:nth-child(1){
+    width: 16px;
+    position: relative;
+    margin-right: 4px;
+    font-weight: bolder;
+}
+/* arrow CSS below  */
+.lang-select img:nth-child(3), .options img:nth-child(3){
+    width: 13px;
+    position: relative;
+    margin-right: 4px;
+    height: 9px;
+}
+/* ul of language list below here */
+#lang-list{
+    margin-right: 1px;
+    display: flex;
+    flex-direction: column;
+    width: 127px;
+    border: 2px solid black;
+    margin-bottom: 1px;
+}
+/* each language li */
+.options{
+    width: 89px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    line-height: 18px;
+    padding-right: 6px;
+    padding-left: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+.options:hover{
+    background-color: rgb(30 144 255);
+}
+/* inside Paragraph of li */
+.options p{
+    margin-left: 18px;
+    font-family: 'DM Sans', sans-serif;
+    color: black;
 }
