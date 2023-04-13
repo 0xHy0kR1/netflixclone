@@ -13,6 +13,7 @@ document.onclick = function(event){
     if(event.target != langSelect && event.target.parentNode != langSelect){
         langList.classList.add("hide-lang-list");
     }
+    
 }
 // From the below code we select the language between english and hindi
 for(const option of options){
