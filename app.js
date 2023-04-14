@@ -62,19 +62,17 @@ app.post('/', (req, res) => {
         .catch((error) => {
             console.log(error);
         })
-        // if(err){
-        //     console.error(err);
-        //     res.sendStatus(500);
-        // }
-        // else{
-        //     res.status(200).render('signup.pug ', {title: 'Success' });
-        // }
     });
 
     // The below is created only to serve the client "/signup" request
     app.get('/signup/registration', function(req, res) {
         res.render('signup', { locale: 'en-IN' });
       });
+    
+    // The below is created only to serve the client "/signin" request
+    app.get('/in/login', function(req, res){
+        res.render('signin');
+    });
 
 app.get('/', (req, res) =>{
     const con = "This is a content"
