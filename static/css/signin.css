@@ -62,4 +62,17 @@ nav > img{
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    margin: auto;
+}
+
+/* CSS for signin box */
+.signin-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
 }

@@ -17,7 +17,21 @@
             <img src="/static/img/login_background.jpg" alt="login_background" id="netflix-signin-page-background">
             <div class="signin-box">
                 <h1 class="signin-box-heading">Sign In</h1>
-                
+                <form action="" method="get">
+                    <div class="block-of-input-email">
+                        <input type="email" name="email" id="email-of-user">
+                        <label for="email-of-customer" class="label-email-name">Email or phone number</label>
+                    </div>
+                    <div class="block-of-input-password">
+                        <input type="password" name="password" id="password-of-user">
+                        <label for="password-of-customer" class="label-password">Password</label>
+                    </div>
+                    <button type="submit" class="signin-button">Sign In</button>
+                    <div class="rememberMe-block">
+                        <input type="button" class="rememberMe-box" value="true" checked>
+                        <label for="login-remember-me-label-text">Remember me</label>
+                    </div>
+                </form>
             </div>
         </section>
     </div>
