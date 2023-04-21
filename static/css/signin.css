@@ -53,10 +53,10 @@ nav > img{
 }
 
 /* CSS for netflix section area */
-.verify-block{
+#verify-block{
     grid-area: section;
-    height: 164%;
-    width: 105%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,8 +71,8 @@ nav > img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:auto;
+    margin: 0 auto;
     border: 2px solid white;
     width: 100%;
-    height: 100%;
+    height: 85vh;
 }
