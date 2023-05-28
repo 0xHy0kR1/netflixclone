@@ -78,6 +78,11 @@ nav > img{
     background: rgba(0,0,0,.75);
 }
 
+/* CSS for signin box heading */
+.signin-box-heading{
+    color: white;
+    text-align: left;
+}
 /* CSS for input email */
 .block-of-input-email{
     display: flex;
@@ -89,6 +94,8 @@ nav > img{
 }
 .label-email-name{
     color: #8c8c8c;
+    position: absolute;
+    padding: 12px;
 }
 
 /* CSS for input password */
@@ -100,6 +107,20 @@ nav > img{
     padding: 12px 46px;
     border-radius: 6px;
 }
-.label-email-name{
+.label-password{
     color: #8c8c8c;
+    position: absolute;
+    padding: 12px;
+}
+
+/* CSS for signin button  */
+.signin-button{
+    background: #e50914;
+    color: white;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    margin-top: 12px;
+    border-radius: 5px;
 }
