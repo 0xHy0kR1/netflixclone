@@ -73,7 +73,7 @@ nav > img{
     justify-content: center;
     margin: 0 auto;
     border: 2px solid white;
-    width: 26%;
+    width: 28%;
     height: 85vh;
     background: rgba(0,0,0,.75);
 }
@@ -86,11 +86,13 @@ nav > img{
 /* CSS for input email */
 .block-of-input-email{
     display: flex;
+    margin-top: 12px;
 }
 #email-of-user{
     background: #333;
-    padding: 12px 46px;
+    padding: 16px 72px;
     border-radius: 6px;
+    border: none;
 }
 .label-email-name{
     color: #8c8c8c;
@@ -101,11 +103,13 @@ nav > img{
 /* CSS for input password */
 .block-of-input-password{
     display: flex;
+    margin-top: 12px;
 }
 #password-of-user{
     background: #333;
-    padding: 12px 46px;
+    padding: 16px 72px;
     border-radius: 6px;
+    border: none;
 }
 .label-password{
     color: #8c8c8c;
