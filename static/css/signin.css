@@ -4,6 +4,16 @@
     padding: 0;
     overflow-x: clip;
 }
+/* Defining custom fonts */
+@font-face {
+    font-family: 'netflix_sanslight';
+    src: url('./fonts/NetflixSans-Regular.woff2') format('woff2'),
+         url('./fonts/NetflixSans-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .container{
     display: grid;
     grid-template-areas: 
@@ -67,6 +77,7 @@ nav > img{
 
 /* CSS for signin box */
 .signin-box{
+    font-family: 'netflix_sanslight';
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -90,6 +101,9 @@ nav > img{
 .signin-box-heading{
     color: white;
     margin-left: 62px;
+    font-size: 1.9rem;
+    margin-top: 37px;
+    margin-bottom: 22px;
 }
 /* CSS for input email */
 .block-of-input-email{
@@ -98,11 +112,12 @@ nav > img{
 }
 #email-of-user{
     background: #333;
-    padding: 16px 72px;
+    padding: 16px 78px;
     border-radius: 6px;
     border: none;
 }
 .label-email-name{
+    font-family: 'netflix_sanslight';
     color: #8c8c8c;
     position: absolute;
     padding: 12px;
@@ -115,7 +130,7 @@ nav > img{
 }
 #password-of-user{
     background: #333;
-    padding: 16px 72px;
+    padding: 16px 78px;
     border-radius: 6px;
     border: none;
 }
@@ -143,6 +158,15 @@ nav > img{
 }
 /* CSS for rememberme text  */
 .rememberme label{
+    font-size: 12px;
     color: #8c8c8c;
 }
-
+/* CSS for signup and google reCAPTCHA texts */
+.block-signup-and-google-captcha{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-family: netflix_sanslight;
+    border: 2px solid red;
+    width: 95%;
+}
