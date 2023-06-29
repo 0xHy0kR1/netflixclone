@@ -83,7 +83,7 @@ nav > img{
     margin: 0 auto;
     border: 2px solid white;
     width: 28%;
-    height: 85vh;
+    height: 100%;
     background: rgba(0,0,0,.75);
 }
 
@@ -155,11 +155,18 @@ nav > img{
 .rememberMe-block{
     display: flex;
     justify-content: space-between;
+    margin-top: 4px;
 }
 /* CSS for rememberme text  */
 .rememberme label{
     font-size: 12px;
     color: #8c8c8c;
+}
+/* CSS for need help */
+.needhelp a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
 }
 /* CSS for signup and google reCAPTCHA texts */
 .block-signup-and-google-captcha{
@@ -169,4 +176,16 @@ nav > img{
     font-family: netflix_sanslight;
     border: 2px solid red;
     width: 95%;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+/* CSS for signup now below text */
+.signup-now{
+    margin: 93px 0px 22px 0px;
+}
+.signup-now a{
+    text-decoration: none;
+    color: inherit;
+}
+.learn-more-block{
 }
