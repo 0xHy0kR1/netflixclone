@@ -185,7 +185,129 @@ nav > img{
 }
 .signup-now a{
     text-decoration: none;
-    color: inherit;
+    color: #ffffffbd;
 }
-.learn-more-block{
+.learn-more-block > p{
+    font-size: 13px;
+}
+.learn-more{
+    font-size: 12px;
+    color: #0000ffe0;
+}
+/* CSS for the footer */
+.linksLang{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+    width: 100%;
+    height: 34vh;
+}
+
+.site-footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    margin-left: 80px;
+}
+.footer-top{
+    color: #737373;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+.footer-top a{
+    text-decoration: none;
+    color: #737373;
+}
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1225px;
+}
+.footer-item-link{
+    list-style: none;
+    width: 232px;
+    padding-right: 14px;
+    margin-bottom: 14px;
+}
+.footer-item-link a{
+    text-decoration: none;
+    color: #737373;
+}
+/* CSS for making of custom CSS box */
+.lang-select{
+    width: 138px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 9px;
+    height: 46px;
+    justify-content: space-between;
+}
+.lang-select p{
+    font-size: 17px;
+    color: black;
+    margin-right: 4px;
+    font-family: 'DM Sans', sans-serif;
+}
+/* globe CSS below */
+.lang-select img:nth-child(1), .options img:nth-child(1){
+    width: 16px;
+    position: relative;
+    margin-right: 4px;
+    font-weight: bolder;
+}
+/* arrow CSS below  */
+.lang-select img:nth-child(3), .options img:nth-child(3){
+    width: 13px;
+    position: relative;
+    margin-right: 4px;
+    height: 9px;
+}
+/* ul of language list below here */
+#lang-list{
+    margin-right: 1px;
+    display: flex;
+    flex-direction: column;
+    width: 137px;
+    border: 1px solid grey;
+    margin-bottom: 1px;
+}
+/* each language li */
+.options{
+    width: 137px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    line-height: 18px;
+    padding-right: 36px;
+    padding-left: 36px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.options:hover{
+    background-color: rgb(30 144 255);
+}
+/* inside Paragraph of li */
+.options p{
+    font-family: 'DM Sans', sans-serif;
+    color: black;
+}
+/* class to dynamically display list of languages  */
+.hide-lang-list{
+    visibility: hidden;
+    margin-bottom: 1px;
+}
+#margin-control{
+    margin-bottom: -44px;
 }
