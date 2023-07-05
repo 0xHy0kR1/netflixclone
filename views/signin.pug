@@ -13,8 +13,6 @@
             <img src="../static/img/Netflix-Logo.wine.svg" alt="netflix">
         </nav>
         <section id="verify-block">
-            <div class="overlay-netflix-image-background"></div>
-            <img src="/static/img/login_background.jpg" alt="login_background" id="netflix-signin-page-background">
             <div class="signin-box">
                 <h1 class="signin-box-heading">Sign In</h1>
                 <form action="" method="get">
@@ -58,6 +56,11 @@
                 <li class="footer-item-link"><a href="corporate_information.pug"><span class="footer-link-text">Corporate Information</span></a></li>
               </ul>
               <div class="select-lang">
+                <div class="lang-select" id="language-select">
+                  <img src="../static/img/signin_globe.png" alt="signup_globe">
+                  <p id="current-lang">English</p>
+                  <img src="../static/img/down-arrow.png" alt="down_down">
+                </div>
                 <ul id="lang-list" class="margin-control hide-lang-list">
                   <li class="options">
                     <p>English</p>
@@ -66,16 +69,11 @@
                     <p>हिंदी</p>
                   </li>
                 </ul>
-                <div class="lang-select" id="language-select">
-                  <img src="../static/img/globe.png" alt="signup_globe">
-                  <p id="current-lang">English</p>
-                  <img src="../static/img/down-arrow.png" alt="down_down">
-                </div>
               </div>
             </div>
         </footer>
     </div>
     block scripts
-        script(src='../static/js/signupJS/signup.js')
+        script(src='../static/js/signupJS/signin.js')
 </body>
 </html>

@@ -4,7 +4,17 @@
     padding: 0;
     overflow-x: clip;
 }
-/* Defining custom fonts */
+*::before{
+    content: "";
+    background: url('/static/img/login_background.jpg') no-repeat center center/cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+}
 @font-face {
     font-family: 'netflix_sanslight';
     src: url('./fonts/NetflixSans-Regular.woff2') format('woff2'),
@@ -38,34 +48,18 @@ nav > img{
     height: 103px;
 }
 
-/* CSS for netflix signin page background image shadow */
-.overlay-netflix-image-background{
-    background: rgb(0 0 0 / 40%);
-    opacity: .9;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 164%;
-    width: 105%;
-    z-index: -1;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
-    overflow-x: hidden;
-}
-
 /* CSS for netflix signin page background */
 #netflix-signin-page-background{
     position: absolute;
-    z-index: -2;
-    width: 105%;
-    height: 155%;
-    top: -252px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 /* CSS for netflix section area */
 #verify-block{
     grid-area: section;
-    height: 100%;
+    height: 91vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -82,8 +76,9 @@ nav > img{
     flex-direction: column;
     margin: 0 auto;
     border: 2px solid white;
-    width: 28%;
+    width: 29%;
     height: 100%;
+    margin-bottom: 40px;
     background: rgba(0,0,0,.75);
 }
 
@@ -109,35 +104,41 @@ nav > img{
 .block-of-input-email{
     display: flex;
     margin-top: 12px;
+    box-sizing: border-box;
 }
 #email-of-user{
     background: #333;
-    padding: 16px 78px;
+    padding: 16px 88px;
     border-radius: 6px;
     border: none;
+    box-sizing: border-box;
 }
 .label-email-name{
     font-family: 'netflix_sanslight';
     color: #8c8c8c;
     position: absolute;
     padding: 12px;
+    box-sizing: border-box;
 }
 
 /* CSS for input password */
 .block-of-input-password{
     display: flex;
     margin-top: 12px;
+    box-sizing: border-box;
 }
 #password-of-user{
     background: #333;
-    padding: 16px 78px;
+    padding: 16px 88px;
     border-radius: 6px;
     border: none;
+    box-sizing: border-box;
 }
 .label-password{
     color: #8c8c8c;
     position: absolute;
     padding: 12px;
+    box-sizing: border-box;
 }
 
 /* CSS for signin button  */
@@ -175,9 +176,10 @@ nav > img{
     color: grey;
     font-family: netflix_sanslight;
     border: 2px solid red;
-    width: 95%;
+    width: 100%;
     flex-wrap: wrap;
     align-items: stretch;
+    height: 100%;
 }
 /* CSS for signup now below text */
 .signup-now{
@@ -196,48 +198,53 @@ nav > img{
 }
 /* CSS for the footer */
 .linksLang{
-    background-color: #f3f3f3;
+    background: rgba(0,0,0,.89);
     display: flex;
+    font-family: 'netflix_sanslight';
     flex-direction: column;
     grid-area: footer;
+    color: grey;
+    border: 2px solid white;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height: 34vh;
+    height: 100%;
 }
 
 .site-footer{
     display: flex;
     flex-direction: column;
-    margin-right: 12px;
-    margin-left: 80px;
+    margin: auto;
 }
 .footer-top{
-    color: #737373;
+    color: inherit;
     margin-bottom: 30px;
     margin-top: 35px;
 }
 .footer-top a{
     text-decoration: none;
-    color: #737373;
+    color: inherit;
 }
 .footer-links{
     display: flex;
     flex-wrap: wrap;
-    width: 1225px;
+    width: 1074px;
 }
 .footer-item-link{
     list-style: none;
-    width: 232px;
+    width: 176px;
     padding-right: 14px;
     margin-bottom: 14px;
 }
 .footer-item-link a{
     text-decoration: none;
-    color: #737373;
+    color: inherit;
+    font-size: 12px;
 }
 /* CSS for making of custom CSS box */
 .lang-select{
     width: 138px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     font-family: 'Inconsolata', monospace;
     line-height: 17px;
@@ -250,25 +257,28 @@ nav > img{
     height: 46px;
     justify-content: space-between;
 }
+/* CSS for current language */
 .lang-select p{
-    font-size: 17px;
-    color: black;
+    font-size: 12px;
+    color: grey;
     margin-right: 4px;
     font-family: 'DM Sans', sans-serif;
 }
 /* globe CSS below */
-.lang-select img:nth-child(1), .options img:nth-child(1){
+.lang-select img:nth-child(1){
     width: 16px;
     position: relative;
     margin-right: 4px;
     font-weight: bolder;
+    filter: invert(1);
 }
 /* arrow CSS below  */
-.lang-select img:nth-child(3), .options img:nth-child(3){
+.lang-select img:nth-child(3){
     width: 13px;
     position: relative;
     margin-right: 4px;
     height: 9px;
+    filter: invert(1);
 }
 /* ul of language list below here */
 #lang-list{
@@ -283,7 +293,7 @@ nav > img{
 .options{
     width: 137px;
     list-style: none;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     font-family: 'Inconsolata', monospace;
     line-height: 18px;
