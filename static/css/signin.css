@@ -75,7 +75,6 @@ nav > img{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    border: 2px solid white;
     width: 29%;
     height: 100%;
     margin-bottom: 40px;
@@ -87,7 +86,6 @@ nav > img{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    border: 2px solid white;
     width: 75%;
     height: 87%;
     background: rgba(0,0,0,.75);
@@ -175,7 +173,6 @@ nav > img{
     flex-direction: column;
     color: grey;
     font-family: netflix_sanslight;
-    border: 2px solid red;
     width: 100%;
     flex-wrap: wrap;
     align-items: stretch;
@@ -195,6 +192,15 @@ nav > img{
 .learn-more{
     font-size: 12px;
     color: #0000ffe0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.learn-more-hidden-info{
+    color: grey;
+    display: block;
+    font-size: 13px;
+    margin-top: 12px;
+    text-decoration: none;
 }
 /* CSS for the footer */
 .linksLang{
@@ -204,7 +210,6 @@ nav > img{
     flex-direction: column;
     grid-area: footer;
     color: grey;
-    border: 2px solid white;
     position: relative;
     bottom: 0;
     width: 100%;

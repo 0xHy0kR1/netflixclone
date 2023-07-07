@@ -23,3 +23,11 @@ for(const option of options){
         currentLang.innerHTML = this.textContent;
     }
 }
+
+// Writing js for learn more signin box hidden info
+learnMore = document.querySelector('.learn-more');
+console.log(learnMore);
+learnMore.addEventListener('click', function(){
+    learnMore.innerHTML = "The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).";
+    learnMore.classList.add("learn-more-hidden-info");
+});
