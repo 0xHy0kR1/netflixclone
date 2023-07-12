@@ -14,7 +14,9 @@
     display: grid;
     grid-template-areas: 
     'navbar navbar navbar navbar'
-    'section section section section'
+    'section1 section1 section1 section1'
+    'section2 section2 section2 section2'
+
     ;
 }
 
@@ -140,8 +142,8 @@ nav > img{
 }
 
 /* Section area styling */
-#section{
-    grid-area: section;
+#section1{
+    grid-area: section1;
     height: 100%;
     width: 100%;
     display: flex;
@@ -307,8 +309,32 @@ input:-webkit-autofill:focus {
     cursor: pointer;
     background-color: #e50914;
 }
-#aside{
-    grid-area: aside;
+/* CSS for demo video as well as description to the netflix */
+#section2{
+    grid-area: section2;
+    background-color: black;
+    border-top: 8px solid grey;
+    border-bottom: 8px solid grey;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.demo-vi-and-desc{
+    width: 100%;
+    height: 100%;
+}
+/* CSS for heading and paragraph */
+.desc-heading{
+    color: white;
+}
+.desc-info{
+    color: white;
+}
+/* CSS for the video */
+.demo-vi{
 }
 #footer{
     grid-area: footer;
