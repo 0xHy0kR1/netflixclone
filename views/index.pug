@@ -43,8 +43,8 @@
                         <div class="email-write-button-and-input">
                             <div class="block-of-input">
                                 <div class="input-email-block">
-                                    <label for="email-of-customer" class="label-email-name">Email address</label>
-                                    <input type="email" name="email" id="email-of-user">
+                                    <label for="email-of-customer" class="label-email-name-top-box">Email address</label>
+                                    <input type="email" name="email" id="email-of-user-top-box">
                                 </div>
                             </div>
                             <div class="right-arrow-block">
@@ -121,7 +121,8 @@
                         <p class="accordion-header">What is Netflix?</p>
                         <div class="accordion-content">
                             <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
-
+                                <br>
+                                <br>
                                 You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
                         </div>
                     </div>
@@ -161,10 +162,25 @@
                     </div>
                 </div>
             </div>
+            <form action="/" method="post" id="index-page-email">
+                <p class="email-write-desc">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="email-write-button-and-input">
+                    <div class="block-of-input">
+                        <div class="input-email-block">
+                            <label for="email-of-customer" class="label-email-name-bottom-box label-move-bottom">Email address</label>
+                            <input type="email" name="email" id="email-of-user-bottom-box">
+                        </div>
+                    </div>
+                    <div class="right-arrow-block">
+                        <button type="submit" class="email-button">Get Started</button>
+                        <img src="../static/img/right-arrow-index-page.svg" alt="right_arrow"  >
+                    </div>
+                </div>
+            </form>
         </section>
     </div>
     block scripts 
         script(src='../static/js/indexJS/nav.js')
-        script(src='../static/js/indexJS/section-1.js')
+        script(src='../static/js/indexJS/section.js')
 </body>
 </html>
